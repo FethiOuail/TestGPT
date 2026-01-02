@@ -1,0 +1,166 @@
+:root {
+  --primary: #6c63ff;
+  --dark: #111827;
+  --light: #f9fafb;
+  --accent: #fbbf24;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: rgba(17, 24, 39, 0.95);
+  backdrop-filter: blur(12px);
+}
+
+.nav-link {
+  color: #e5e7eb;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent);
+}
+
+.hero {
+  min-height: 100vh;
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+  background: radial-gradient(circle at top left, #1f2937, #0f172a 55%);
+  color: #fff;
+}
+
+.text-accent {
+  color: var(--accent);
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.5);
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-alt {
+  background: #111827;
+  color: #f9fafb;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.profile-card {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.15);
+}
+
+.skill-card,
+.project-card {
+  border: none;
+  border-radius: 20px;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+  height: 100%;
+}
+
+.section-alt .skill-card {
+  background: rgba(255, 255, 255, 0.08);
+  color: #f9fafb;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(108, 99, 255, 0.15);
+  color: var(--primary);
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.section-alt .skill-pill {
+  background: rgba(251, 191, 36, 0.2);
+  color: var(--accent);
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.2);
+}
+
+.contact-card {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.section-alt .contact-card {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-form {
+  padding: 2rem;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.section-alt .contact-form {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.footer {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 2rem 0;
+}
+
+.footer a {
+  color: #e5e7eb;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.footer a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero-card {
+    text-align: left;
+  }
+}
